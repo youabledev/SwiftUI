@@ -58,3 +58,8 @@
   - 데이터 변경시 UI도 즉시 자동 갱신
   - 뷰의 특정 상태 저장할 State나 모델 객체 변화 관찰하는 ObservableObject의 변화를 감지하여 뷰에 반영
   - 일관성 있는 결과와 버그 발생 감소
+---------------
+## 출처 및 참고 사이트
+
+* 스윗한 SwiftUI: [서점 연결](http://www.yes24.com/Product/Goods/89912849)
+* 스윗한 SwiftUI: [GitHub](https://github.com/giftbott/SweetSwiftUIExamples)
