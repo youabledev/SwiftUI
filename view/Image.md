@@ -90,6 +90,37 @@ Image("company").resizable()
                 .foregroundColor(.red)
 ```
 
+### SFSymbols
+- SF Symbols 앱 설치 혹은 공식 문서 참고 [링크](https://developer.apple.com/sf-symbols/)
+
+- systemName에 SF Symbol 이름을 넘겨줌
+```swift◊◊
+Image(systemName: "square.and.arrow.up")
+```
+
+##### imageScale
+- Image.Scale 값인 small, medium, large 를 지정해서 이미지 사이즈를 변경함
+- default는 small
+```swift
+Image(systemName: "square.and.arrow.up").imageScale(.small) // default
+Image(systemName: "square.and.arrow.up").imageScale(.medium)
+Image(systemName: "square.and.arrow.up").imageScale(.large)
+```
+
+##### tint
+- foregroundColor 수식어를 사용해서 SFSymbols의 색상을 변경함 (투명한 부분 제외)
+```swift
+Image(systemName: "square.and.arrow.up")
+                .foregroundColor(.blue)
+```
+
+##### font
+- font를 사용해서 크기를 변경할 수 있음
+```swift
+Image(systemName: "square.and.arrow.up").font(.body)
+Image(systemName: "square.and.arrow.up").font(.system(size: 56))
+```
+
 --------------
 ## 참고 자료 및 출처
 * 스윗한 SwiftUI: [서점 연결](http://www.yes24.com/Product/Goods/89912849)
