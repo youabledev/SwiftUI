@@ -94,6 +94,18 @@ HStack(spacing: 0) {
 ```
 - 먼저 선언된 view 일 수록 아래에 쌓임. 뎁스가 깊음
 
+### 공간 확장
+- Spacer를 사용하는 경우 형제 뷰가 없을 경우 ZStack 크기 만큼 공간 확장이 일어남
+- 형재뷰가 있는 경우 Spacer는 형제 뷰의 크기만큼 공간 확장이 일어남
+- Color.clear나 Rectable을 이용해서 뷰를 확장할 수 있음
+```swift
+        ZStack {
+            Color.clear
+            Text("test").font(.title)
+        }.background(.yellow)
+```
+- ZStack의 영역이 최대로 확장 됨
+
 -------
 ### 수식어
 
